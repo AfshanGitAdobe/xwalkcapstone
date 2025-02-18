@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p27461-e83049.adobeaemcloud.com/bin/franklin.delivery/AfshanGitAdobe/walk-capstone/main"
+    url: "https://author-p27461-e83049.adobeaemcloud.com/bin/franklin.delivery/AfshanGitAdobe/xwalkcapstone/main"
     type: "markup"
     suffix: ".html"
