@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/xwalk-capstone-ank-site/:/",
-    "/content/xwalk-capstone-ank-site/configuration:/.helix/config.json",
-    "/content/xwalk-capstone-ank-site/metadata:/metadata.json"
+    "/content/xwalk-afshan/:/",
+    "/content/xwalk-afshan/configuration:/.helix/config.json",
+    "/content/xwalk-afshan/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/xwalk-capstone-ank-site/"
+    "/content/xwalk-afshan/"
   ]
 }
