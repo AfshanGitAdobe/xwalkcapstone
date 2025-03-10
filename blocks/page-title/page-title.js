@@ -1,7 +1,22 @@
-import { createElement } from '../../scripts/blocks-utils.js';
+
 
 const DROPDOWN_ICON_TEAL = `${window.hlx.codeBasePath}/icons/chevron-down-teal.svg`;
 const DROPDOWN_ICON_WHITE = `${window.hlx.codeBasePath}/icons/chevron-down-white.svg`;
+
+/**
+ * Create new DOM element with tag name and class name.
+ * @param tagName tag name
+ * @param className class name
+ * @returns created element
+ */
+function createElement(tagName, className) {
+  const element = document.createElement(tagName);
+  if (className) {
+    element.classList.add(className);
+  }
+  return element;
+}
+
 
 function createPageTitle(content) {
   const titleDiv = createElement('div', 'left-title');

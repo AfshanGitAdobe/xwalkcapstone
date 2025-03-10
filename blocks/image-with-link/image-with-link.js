@@ -1,5 +1,18 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
-import { createElement } from '../../scripts/blocks-utils.js';
+
+/**
+ * Create new DOM element with tag name and class name.
+ * @param tagName tag name
+ * @param className class name
+ * @returns created element
+ */
+function createElement(tagName, className) {
+  const element = document.createElement(tagName);
+  if (className) {
+    element.classList.add(className);
+  }
+  return element;
+}
 
 function addLink(link, optimizedPic) {
   if (link) {
