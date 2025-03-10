@@ -122,18 +122,6 @@
           }
         },
         {
-          "component": "text",
-          "valueType": "string",
-          "name": "content_image_mobileAlt",
-          "label": "Mobile Image Alt",
-          "value": "",
-          "condition": { "!": { "or": [
-            { "in": ["tabs", { "var": "classes" }] },
-            { "in": ["buttons-stack", { "var": "classes" }] },
-            { "in": ["imagecoverage", { "var": "classes" }] }]}
-          }
-        },
-        {
           "component": "reference",
           "valueType": "string",
           "name": "content_image",

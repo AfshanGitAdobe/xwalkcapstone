@@ -1,0 +1,242 @@
+.tabs-with-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-with-comments .custom-side-nav,
+.tabs-with-comments .button-container,
+.tabs-with-comments .navigation,
+.tabs-with-comments .testimonial-container {
+    display: none;
+}
+
+.tabs-with-comments-wrapper .tabs-with-comments .fragment-wrapper .section .rich-text-wrapper {
+    margin-top: 1.5rem;
+}
+
+.tabs-with-comments div > ul:has(li > a) {
+    padding: 0;
+}
+
+.tabs-with-comments ol ol {
+    list-style: none;
+}
+
+.tabs-with-comments .tabs-comments p,
+.tabs-with-comments .tabs-comments a,
+.tabs-with-comments .tabs-comments ul,
+.tabs-with-comments .tabs-comments ol {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+
+.tabs-with-comments h3 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--teal);
+    margin-top: var(--heading-font-size-l);
+    margin-bottom: var(--heading-font-size-xss);
+}
+
+.tabs-with-comments .dropdown-list {
+    background: none;
+    width: fit-content;
+    border-radius: 0.188rem;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: inherit;
+    appearance: none; /* Removes default dropdown styling */
+    padding: 0.313rem 1.563rem 0.313rem 0.313rem;
+    outline: none;
+}
+
+.tabs-with-comments .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    right: 0.313rem;
+    margin-left: -1.25rem;
+    vertical-align: middle;
+    border-top: 0.25rem solid var(--black);
+    border-right: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+    border-bottom: 0 dotted;
+}
+
+.tabs-with-comments div > ol:first-of-type {
+    padding: 0.8rem;
+}
+
+.tabs-with-comments .tabs-comments li {
+    position: relative;
+    font-size: 0.875rem;
+}
+
+.tabs-with-comments .tabs-comments li:not(:last-child, :has(li)) {
+    padding-bottom: 0.5rem;
+}
+
+.tabs-with-comments .tabs-comments div.icon-list ul {
+    padding: 0;
+}
+
+.tabs-with-comments .tabs-comments div.icon-list li {
+    padding: 0 1.5625rem 0.625rem;
+    list-style-type: none;
+}
+
+.tabs-with-comments .tabs-comments div.icon-tick li {
+    background: url('../../images/icon-tick.png') 0 0 no-repeat;
+}
+
+.tabs-with-comments .tabs-comments div.arrow-bullet-teal li {
+    background: url('../../images/arrow-bullet-teal.png') 0 0.25rem no-repeat;
+}
+
+.tabs-with-comments .tabs-comments div.icon-exclamation li {
+    background: url('../../images/icon-exclamation.png') 0 0 no-repeat;
+}
+
+.tabs-with-comments-wrapper > .tabs-with-comments > div h2 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: var(--teal);
+}
+
+@media (width >= 48rem) {
+    .tabs-with-comments .testimonial-container {
+        display: block;
+    }
+
+    .tabs-with-comments .testimonial-container ul {
+        display: block;
+        position: relative;
+        margin-bottom: 2.5rem;
+        padding: 4rem 1.875rem 1.875rem;
+        box-shadow: 0 0.125rem 0.313rem var(--taupe-gray);
+        background-color: var(--ivory-gray);
+        background-image: url('../../images/bg-testimonial-tablet.png');
+        background-repeat: no-repeat;
+        background-position: center 0.938rem;
+        color: var(--black);
+    }
+
+    .tabs-with-comments .testimonial-container ul > li {
+        border-bottom: 0.063rem solid var(--white);
+    }
+
+    .tabs-with-comments .testimonial-container ul > li > p {
+        font-size: 0.875rem;
+        line-height: var(--heading-font-size-l);
+        padding-bottom: var(--heading-font-size-xl);
+    }
+
+}
+
+@media (width >= 62rem) {
+    .tabs-with-comments {
+        flex-direction: row;
+    }
+
+    .tabs-with-comments .first-half {
+        flex: 1;
+    }
+
+    .tabs-with-comments .tabs-comments {
+        flex: 2;
+    }
+
+    .tabs-with-comments .custom-side-nav {
+        display: block;
+        list-style-type: none;
+        padding: 0 2rem var(--heading-font-size-xss) 0;
+    }
+
+    .tabs-with-comments .custom-side-nav li {
+        background-color: var(--white);
+        border: 0.063rem solid var(--teal);
+        box-sizing: border-box;
+        position: relative;
+        list-style-type: none;
+    }
+
+    .tabs-with-comments .custom-side-nav li:not(:last-child) {
+        border-bottom: 0;
+    }
+
+    .tabs-with-comments .custom-side-nav ul {
+        padding-left: 0;
+    }
+
+    .tabs-with-comments .custom-side-nav li a {
+        display: block;
+        padding: 0.938rem;
+        line-height: var(--heading-font-size-xss);
+        color: var(--dark-grayish-blue);
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .tabs-with-comments .custom-side-nav li:hover a {
+        color: var(--black);
+    }
+
+    .tabs-with-comments .custom-side-nav li.active a {
+        color: var(--white);
+    }
+
+    .tabs-with-comments .custom-side-nav li.active {
+        background: var(--dark-color);
+        border-color: var(--dark-color);
+        color: var(--white);
+        position: relative;
+    }
+
+    .tabs-with-comments .custom-side-nav li.active::after {
+        content: url('../../images/triangle-pointer.png');
+        z-index: 100;
+        position: absolute;
+        right: -0.6rem;
+        top: 0.7rem;
+        background: url('../../images/triangle-pointer.png') 0 0 no-repeat;
+    }
+
+    .tabs-with-comments .dropdown-wrapper {
+        display: none;
+    }
+
+    .tabs-with-comments .testimonial-container ul {
+        background-image: url('../../images/bg-testimonial.png');
+        color: var(--black);
+        box-shadow: 0 0.125rem 0.313rem var(--taupe-gray);
+        padding: 4.063rem 1.875rem 13.125rem;
+        margin-right: 2rem;
+    }
+
+    .tabs-with-comments-wrapper {
+        position: relative;
+    }
+
+    .tabs-with-comments .tabs-comments > div {
+        animation: slide-in 0.3s ease-out;
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}
+
+@media (width >= 75rem) {
+    .tabs-with-comments .testimonial-container ul {
+        padding: 5rem 1.875rem 1.875rem;
+        list-style-image: url('../../images/bg-testimonial.png');
+        margin-right: 2rem;
+    }
+}
