@@ -1,5 +1,3 @@
-
-
 const DROPDOWN_ICON_TEAL = `${window.hlx.codeBasePath}/icons/chevron-down-teal.svg`;
 const DROPDOWN_ICON_WHITE = `${window.hlx.codeBasePath}/icons/chevron-down-white.svg`;
 
@@ -16,7 +14,6 @@ function createElement(tagName, className) {
   }
   return element;
 }
-
 
 function createPageTitle(content) {
   const titleDiv = createElement('div', 'left-title');
